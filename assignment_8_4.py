@@ -1,5 +1,4 @@
 # use romeo.txt
-# use romeo.txt
 
 fname = input("Enter file name: ")
 fh = open(fname)
