@@ -1,19 +1,19 @@
 # use romeo.txt
+# use romeo.txt
 
 fname = input("Enter file name: ")
 fh = open(fname)
 lst = list()
 
-for line in fh:
+for line in fh:             #loop through text 
     line = line.strip()   #strip right side
     words = line.split()  #split line into words
-    total_words = lst + words
-    print(total_words)
 
-    if words not in lst:
-        lst.append(words)
-
-
+  
+    for word in words:     #loop through line
+        if word not in lst:  #append word to list
+        	lst.append(word)
+    
 lst.sort()
 print(lst)
 
