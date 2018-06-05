@@ -22,3 +22,9 @@ for line in fh:             #loop through text file
 
 
 #Count time frequencies, print out times in ascending order
+counts = dict
+lst = list()
+
+for key,val in counts.items():
+    newtup = (val,key)
+    list.append(newtup)
