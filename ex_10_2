@@ -15,9 +15,10 @@ for line in fh:             #loop through text file
     words = line.split() # split line into words
     #print(words)
 
-
-
-
+#How to pull time 
     for time in words:    #split again for time
-        time = time.split(':')
+        time = words.split(':')
         print(time)
+
+
+#Count time frequencies, print out times in ascending order
