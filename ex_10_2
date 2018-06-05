@@ -1,0 +1,23 @@
+#ex_10_2
+
+#  open  mbox-short.txt
+name = input("Enter file:")
+
+#if len(name) < 1 : name = "mbox-short.txt"
+
+try:   fh = open(name)
+except: print('File cannot be opened', name)
+    #exit()
+
+for line in fh:             #loop through text file
+    line = line.rstrip()  # strip white space right
+    if not line.startswith("From"): continue       #look for 'From'
+    words = line.split() # split line into words
+    #print(words)
+
+
+
+
+    for time in words:    #split again for time
+        time = time.split(':')
+        print(time)
