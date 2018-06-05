@@ -38,7 +38,8 @@ bigword = None
 
 for name,count in count_names.items():              #maximum loop for largest number
     if bigcount is None or count > bigcount:		# determine max key value 
-        bigword = words								# words from lines
         bigcount = count
+	bigword = words								# words from lines
+        
 
 print(bigword[1], bigcount)
